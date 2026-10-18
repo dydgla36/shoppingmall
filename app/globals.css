@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #1a1a1a;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+@layer components {
+  .btn { @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold transition-colors duration-200; }
+  .btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+  .btn-outline { @apply btn border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white; }
+  .wrap { @apply mx-auto max-w-6xl px-4; }
+}
